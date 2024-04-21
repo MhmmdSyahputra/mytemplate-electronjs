@@ -1,0 +1,15 @@
+{
+  "api_url": "http://192.168.2.188/sistemparkir_kue/api.php",
+  "api_date": "http://192.168.2.188/sistemparkir_kue/getdate.php",
+  "url_background": "http://192.168.2.188/sistemparkir_kue/images/wallpaper1.jpg",
+  "api_secretcode": "1122334455",
+  "idkiosk": "K01",
+  "license": "1945305733",
+  "timeout": "0006",
+  "gateout": "GO01",
+  "FTPHost": "192.168.2.188",
+  "FTPUser": "ftpuser",
+  "FTPPass": "SmartmaticFTP+778899",
+  "rstp": "rtsp://admin:Sistem112233@192.168.2.191:554/cam/realmonitor?channel=1&subtype=1mp4",
+  "rstp1": "rtsp://admin:admin123@192.168.2.201:554/cam/realmonitor?channel=1&subtype=0"
+}

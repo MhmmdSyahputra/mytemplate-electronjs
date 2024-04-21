@@ -1,0 +1,186 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+
+ @font-face {
+  font-family: AbsoluteEmpire;
+  src: url(./../../assets/font/aAbsoluteEmpire.otf);
+}
+
+body {
+  position: relative;
+  color: white;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* Menghilangkan margin bawaan dari body */
+  background: black;
+  font-family: sans-serif;
+  overflow-y: hidden;
+}
+
+.title-head {
+  font-family: AbsoluteEmpire;
+  font-size: 55px;
+  letter-spacing: 5px;
+  padding-top: 40px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* Menggunakan width: 100% untuk mengisi seluruh lebar layar */
+  height: 100vh;
+}
+
+.Header {
+  color: white;
+  text-align: center;
+}
+
+.Footer {
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.Content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+:root {
+  --primary-color: #032a5c;
+  --secondary-color: #bc1558;
+  --transparant-color: rgba(94, 94, 94, 0.75);
+}
+
+.btn-primary {
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.btn-primary:hover:active {
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.btn-danger {
+  border: none;
+  background-color: var(--secondary-color);
+}
+
+.btn-danger:hover {
+  border: none;
+  background-color: var(--secondary-color);
+}
+
+.btn-danger:hover:active {
+  border: none;
+  background-color: var(--secondary-color);
+}
+
+.primary-bg {
+  background-color: var(--primary-color);
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.secondary-bg {
+  background-color: var(--secondary-color);
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.transparant-bg {
+  background-color: var(--transparant-color);
+}
+
+.disabledPage {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Tooltip container */
+.mytooltips {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.mytooltips .tooltiptext {
+  font-size: 12px;
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 35%;
+  left: 180%;
+  margin-left: -56px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.mytooltips .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 33%;
+  left: -5%;
+  transform: rotate(90deg);
+  /* Equal to rotateZ(45deg) */
+  margin-left: -4px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.mytooltips:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.text-label {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.text-value {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+* {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+}

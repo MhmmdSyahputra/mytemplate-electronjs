@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script type="text/javascript" src="qrcode.js"></script>
+  <!-- <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script> -->
+
+  <style>
+    @font-face {
+      font-family: gilroy-bold;
+      src: url(./../../../assets/font/Gilroy-ExtraBold.otf);
+    }
+
+    @font-face {
+      font-family: gilroy-light;
+      src: url(./../../../assets/font/Gilroy-Light.otf);
+    }
+
+    * {
+      font-family: 'consolas';
+    }
+
+    body {
+      margin-left: 13px;
+      margin-bottom: 100px;
+    }
+
+    .line {
+      font-size: 38px;
+    }
+
+    #header1 {
+      font-weight: bold;
+      /* font-family: gilroy-bold; */
+      /* text-align: center; */
+      font-weight: 900;
+      font-size: 42px;
+    }
+
+    #header2 {
+      font-size: 38px;
+      /* margin-bottom: 50px; */
+    }
+
+    .label {
+      font-size: 36px;
+    }
+
+    #qrcode {
+      text-align: center;
+      margin: 0 auto;
+      width: 350px;
+      height: 350px;
+      margin-bottom: 50px;
+    }
+
+    .isi {
+      margin-bottom: 20px;
+      font-size: 38px;
+      text-transform: uppercase;
+      font-weight: bold;
+      /* font-family: gilroy-bold; */
+    }
+
+    #footer1 {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    #footer2 {
+      font-size: 36px;
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- <div id="header1"></div>
+  <div id="header2"></div>
+  <div id="qrcode"></div>
+  <div class="label">FULL NAME</div>
+  <div id="fullname" class="isi"></div>
+  <div class="label">ID NUMBER</div>
+  <div id="idnumber" class="isi"></div>
+  <div class="label">DESTINATION</div>
+  <div id="destination" class="dest1"></div>
+  <div id="lantai" class="dest2"></div>
+  <div id="footer1"></div>
+  <div id="footer2"></div> -->
+
+  <div id="header1"></div>
+  <div id="header2"></div>
+  <div class="line">-----------------------------------</div>
+  <div style="text-align: center; font-size: 38px;">BUKTI PEMBAYARAN</div>
+  <div class="line">-----------------------------------</div>
+  <br>
+  <table>
+
+    <tr class="label">
+      <td>KODE TIKET</td>
+      <td style="padding-left: 13px; padding-right: 13px;">:</td>
+      <td><span id="kode-tiket"></span></td>
+    </tr>
+
+    <tr class="label">
+      <td>TGL MASUK</td>
+      <td style="padding-left: 13px; padding-right: 13px;">:</td>
+      <td><span id="tgl-masuk"></span></td>
+    </tr>
+    <tr class="label">
+      <td>KODE KELUAR</td>
+      <td style="padding-left: 13px; padding-right: 13px;">:</td>
+      <td><span id="tgl-keluar"></span></td>
+    </tr>
+    <tr class="label">
+      <td>DURASI</td>
+      <td style="padding-left: 13px; padding-right: 13px;">:</td>
+      <td><span id="durasi"></span></td>
+    </tr>
+    <tr class="label">
+      <td>BIAYA</td>
+      <td style="padding-left: 13px; padding-right: 13px;">:</td>
+      <td><span id="biaya"></span></td>
+    </tr>
+    <tr class="label">
+      <td colspan="3">&nbsp;</td>
+    </tr>
+    <tr class="label">
+      <td>NO. KARTU</td>
+      <td style="padding-left: 13px; padding-right: 13px;">:</td>
+      <td><span id="no-kartu"></span></td>
+    </tr>
+    <tr class="label">
+      <td>BAYAR VIA</td>
+      <td style="padding-left: 13px; padding-right: 13px;">:</td>
+      <td><span id="bayar-via"></span></td>
+    </tr>
+    <tr class="label">
+      <td>SISA SALDO</td>
+      <td style="padding-left: 13px; padding-right: 13px;">:</td>
+      <td><span id="sisa-saldo"></span></td>
+    </tr>
+  </table>
+  <div class="line">-----------------------------------</div>
+  <div id="footer1"></div>
+</body>
+<script>
+  // let url = new URL(location);
+  // var codeqr = url.searchParams.get("code");
+  // console.log(codeqr);
+  // var qrcode = new QRCode(document.getElementById("qrcode"), {
+  //   text: codeqr,
+  //   width: 350,
+  //   height: 350
+  // });
+</script>
+
+</html>
